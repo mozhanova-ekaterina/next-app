@@ -1,3 +1,4 @@
+import Header from "@/components/shared/header";
 import "@/styles/globals.css";
 import { Metadata } from "next";
 import { Nunito } from "next/font/google";
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body
         className={nunito.className}
       >
+        <Header/>
         <main>{children}</main>
       </body>
     </html>

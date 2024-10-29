@@ -1,11 +1,27 @@
 import React from 'react'
+import clsx from 'clsx'
+import {Button} from '../ui/index'
 
-type Props = {}
+type Props = {
+  className? : string
+}
 
-const header = (props: Props) => {
+const Header: React.FC<Props> = ({className}) => {
   return (
-    <div>header</div>
+    <header className={clsx('border border-b', className, {
+      // 'bg-white': true,
+    })}>
+      <div className="container">
+        <div>
+          <img width='100px' src="next.svg" alt="logo" />
+          <p>Lorem ipsum dolor sit.</p>
+        </div>
+        <div>
+          <Button>Войти</Button>
+        </div>
+      </div>
+    </header>
   )
 }
 
-export default header
+export default Header
