@@ -1,4 +1,4 @@
-import {nextui} from '@nextui-org/theme'
+import { nextui } from "@nextui-org/theme";
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -7,37 +7,34 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
-  theme: {
-    extend: {
-      fontFamily: {
-        sans: ["var(--font-sans)"],
-        mono: ["var(--font-mono)"],
-      },
-    },
-  },
-  darkMode: "class",
   plugins: [
     nextui({
-      addCommonColors: true,
       themes: {
         light: {
-          // ...
+          // light theme layout tokens
           colors: {
             primary: {
-              DEFAULT: 'blue'
+              DEFAULT: "#C20E4D",
+              foreground: "#fff",
             },
-            focus: 'green'
-          },
+            foreground: "#27272a", //text
+            secondary: {
+              DEFAULT: "#f4f4f5",
+              foreground: "#27272a",
+            },
+            background: "#ffffff",
+            success: "#17c964",
+            warning: "#f7b750",
+          }, // light theme colors
         },
-        dark: {
-          // ...
+        dark: { // dark theme layout tokens
           colors: {
             primary: {
-              DEFAULT: 'pink'
+              DEFAULT: "pink",
+              foreground: "gray",
             },
-          },
+          }, // dark theme colors
         },
-        // ... custom themes
       },
     }),
   ],
