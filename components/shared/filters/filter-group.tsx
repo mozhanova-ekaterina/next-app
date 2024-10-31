@@ -1,6 +1,7 @@
 import React, { PropsWithChildren } from "react";
 import Title from "../title";
 import { Divider } from "@/components/ui";
+import clsx from "clsx";
 
 type Props = {
   className?: string;
@@ -15,7 +16,7 @@ const FilterGroup: React.FC<PropsWithChildren<Props>> = ({
   divider = true,
 }) => {
   return (
-    <div>
+    <div className={clsx(className)}>
       {title && <Title text={title} size="xs" className="font-bold mb-3" />}
       {children}
       {divider && <Divider className="w-[90%] my-6" />}

@@ -1,14 +1,15 @@
-import { Input, Slider } from '@/components/ui';
-import { RussianRuble } from 'lucide-react';
-import React from 'react'
+import { Input, Slider } from "@/components/ui";
+import { RussianRuble } from "lucide-react";
+import React from "react";
 
 type Props = {
-  min?: number
-  max?: number
-  defaultValue?: number
-}
+  min: number;
+  max: number;
+  value: number[];
+  step: number;
+};
 
-const RangePrice: React.FC<Props> = ({min = 0, max = 1000, defaultValue = 0}) => {
+const RangeSlider: React.FC<Props> = ({ min, max, value, step }) => {
   return (
     <div>
       <div className="inline-flex gap-2">
@@ -32,10 +33,10 @@ const RangePrice: React.FC<Props> = ({min = 0, max = 1000, defaultValue = 0}) =>
       </div>
       <Slider
         label="Цена"
-        step={50}
+        step={step}
         maxValue={max}
         minValue={min}
-        defaultValue={[min, max]}
+        defaultValue={value}
         formatOptions={{
           style: "currency",
           currency: "RUB",
@@ -44,6 +45,6 @@ const RangePrice: React.FC<Props> = ({min = 0, max = 1000, defaultValue = 0}) =>
       />
     </div>
   );
-}
+};
 
-export default RangePrice
+export default RangeSlider;
