@@ -25,10 +25,11 @@ module.exports = {
             background: "#ffffff",
             success: "#17c964",
             warning: "#f7b750",
-            focus: '#C20E4D'
+            focus: "#C20E4D",
           }, // light theme colors
         },
-        dark: { // dark theme layout tokens
+        dark: {
+          // dark theme layout tokens
           colors: {
             primary: {
               DEFAULT: "pink",

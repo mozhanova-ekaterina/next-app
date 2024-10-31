@@ -8,3 +8,4 @@ export { CheckboxGroup, Checkbox } from "@nextui-org/checkbox";
 export { Slider } from "@nextui-org/slider";
 export { RadioGroup, Radio } from "@nextui-org/radio";
 export { ScrollShadow } from "@nextui-org/scroll-shadow";
+export { Image } from "@nextui-org/image";

@@ -10,7 +10,7 @@ type Props = {
 
 const TopBar: React.FC<Props> = ({ className }) => {
   return (
-    <div className={clsx(className, 'sticky top-0 bg-white shadow-lg py-5 z-10')}>
+    <div className={clsx(className, 'sticky top-0 bg-white shadow-lg py-5 z-50')}>
       <Container className='flex items-center justify-between'>
         <Categories/>
         <SortPopup/>
