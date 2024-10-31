@@ -1,6 +1,6 @@
 import clsx from 'clsx'
 import React from 'react'
-import { Button, Link } from '../ui'
+import { Button, Link } from '../../ui'
 
 type Props = {
   className?: string

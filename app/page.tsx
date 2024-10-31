@@ -1,6 +1,6 @@
 import Container from "@/components/shared/container";
 import Title from "@/components/shared/title";
-import TopBar from "@/components/shared/top-bar";
+import TopBar from "@/components/shared/top-bar/index";
 import Filters from "../components/shared/filters/index";
 
 export default function Home() {

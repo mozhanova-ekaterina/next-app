@@ -1,8 +1,8 @@
 import clsx from 'clsx'
 import React from 'react'
-import Container from './container'
 import Categories from './categories'
 import SortPopup from './sort-popup'
+import Container from '../container'
 
 type Props = {
   className?: string
