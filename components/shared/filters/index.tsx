@@ -36,7 +36,7 @@ const Filters: React.FC<Props> = ({ className }) => {
     <div className={clsx(className, "p-4 max-w-[244px]")}>
       <Title text="Фильтрация" className="font-bold mb-3" />
       <FilterGroup>
-        <CheckboxFilterGroup items={[checkboxValue[0], checkboxValue[1]]} defaultValue={[checkboxValue[0].value]} />
+        <CheckboxFilterGroup items={[checkboxValue[0], checkboxValue[1]]} defaultValue={[checkboxValue[0]]} />
       </FilterGroup>
       <FilterGroup title="Цена от и до:">
         <RangeSlider min={0} max={1000} value={[0, 1000]} step={50} />
