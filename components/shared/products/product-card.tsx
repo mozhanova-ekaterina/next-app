@@ -1,30 +1,36 @@
 import { Button, Card, CardBody, CardFooter, Image } from "@/components/ui";
 import React from "react";
 import Title from "../title";
-import { RussianRuble } from "lucide-react";
+import { CirclePlus, RussianRuble } from "lucide-react";
 
-type Props = {};
-const card = {
-  title: "Product title",
-  description:
-    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, obcaecati a magnam accusantium eveniet itaque facilis! Magnam dolore deleniti dolorem.",
-  price: 1000,
-  image: "1.jpg",
+type Props = {
+  name: string;
+  id: string;
+  imageUrl: string;
+  price: number;
 };
 
-const ProductCard = (props: Props) => {
+const ProductCard: React.FC<Props> = ({ name, id, imageUrl, price }) => {
   return (
-    <Card className="max-h-[450px]">
-      <CardBody>
-        <Image alt="Product image" src={card.image} />
-        <Title text={card.title} size="xs" className="font-bold mt-3" />
-        <p className="py-3 ">{card.description}</p>
+    <Card className="">
+      <CardBody className="overflow-hidden">
+        <Image
+          className="object-cover w-full h-[250px]"
+          alt="Product image"
+          src={imageUrl}
+          removeWrapper
+        />
+        <Title text={name} size="xs" className="font-bold mt-3" />
+        <p className="py-3 ">{}</p>
       </CardBody>
-      <CardFooter>
+      <CardFooter className="inline-flex items-center justify-between gap-2">
         <p className="inline-flex items-center font-bold">
-          от {card.price}
+          от {price}
           <RussianRuble size={"15px"} />
         </p>
+        <Button variant="solid" color="primary" endContent={<CirclePlus />} className="">
+          Добавить
+        </Button>
       </CardFooter>
     </Card>
   );

@@ -18,3 +18,17 @@ export default function Home() {
     </>
   );
 }
+
+
+//ICONS >>
+//https://lucide.dev/icons/circle-plus
+
+//DOCS >>
+//https://nextui.org
+//https://nextjs.org/docs/getting-started/installation
+
+//YOUTUBE >>
+//https://www.youtube.com/watch?v=GUwizGbY4cc
+
+//ZUSTAND >>
+//https://zustand.docs.pmnd.rs/getting-started/introduction
