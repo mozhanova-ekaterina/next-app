@@ -38,4 +38,9 @@ export default function Home() {
 //REACT USE >>
 //https://www.reactuse.com/
 
+//PRISMA >>
+//https://www.prisma.io/docs
 // Проще говоря, Prisma - это инструмент, позволяющий работать с реляционными (PostgreSQL, MySQL, SQL Server, SQLite) и нереляционной (MongoDB) базами данных с помощью JavaScript или TypeScript без использования SQL (хотя такая возможность имеется).
+
+//VERSEL >>
+//https://vercel.com/ekaterinas-projects-9a57a463

@@ -6,7 +6,9 @@
 		"dev": "next dev --turbo",
 		"build": "next build",
 		"start": "next start",
-		"lint": "eslint . --ext .ts,.tsx -c .eslintrc.json --fix"
+		"lint": "eslint . --ext .ts,.tsx -c .eslintrc.json --fix",
+		"prisma:push" : "prisma db push",
+		"prisma:studio" : "prisma studio"
 	},
 	"dependencies": {
 		"@nextui-org/button": "2.0.38",
