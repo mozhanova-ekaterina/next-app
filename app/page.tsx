@@ -19,6 +19,8 @@ export default function Home() {
   );
 }
 
+//NEXT >>
+//https://nextjs.org
 
 //ICONS >>
 //https://lucide.dev/icons/circle-plus
@@ -32,3 +34,8 @@ export default function Home() {
 
 //ZUSTAND >>
 //https://zustand.docs.pmnd.rs/getting-started/introduction
+
+//REACT USE >>
+//https://www.reactuse.com/
+
+// Проще говоря, Prisma - это инструмент, позволяющий работать с реляционными (PostgreSQL, MySQL, SQL Server, SQLite) и нереляционной (MongoDB) базами данных с помощью JavaScript или TypeScript без использования SQL (хотя такая возможность имеется).
